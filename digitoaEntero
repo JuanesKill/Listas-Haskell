@@ -1,0 +1,7 @@
+
+digitaEntero::[Integer]->Integer
+digitaEntero ls =case ls of
+    []->0
+    x:xs->x*10^(length xs)+ digitaEntero xs
+
+main = print $ digitaEntero([2,4,5])
